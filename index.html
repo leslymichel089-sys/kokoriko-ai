@@ -823,7 +823,7 @@ async function handleGenerate(){
   songs.unshift(song);saveSongs();renderSongs();
   user.used++;saveUser();updateCredDisplay();
   try{
-    const k=window.SONAUTO_API_KEY||'';
+    const k=window.SONAUTO_sksonauto_sUuNu6ds8prAOPsBuykY3JbTHO2Nq2kuhegtFdIdH6X89kBE||'';
     if(k)await genSonauto(id,enriched,title,k);
     else await genDemo(id,title);
   }catch(e){await genDemo(id,title);}
