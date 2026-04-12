@@ -212,7 +212,7 @@ header{position:sticky;top:0;z-index:100;backdrop-filter:blur(20px) saturate(180
 .toast.success{border-color:rgba(34,197,94,0.3);}
 .toast.error{border-color:rgba(239,68,68,0.3);}
 
-/* LEGAL */
+/* LEGAL 
 .legal-pg{max-width:790px;margin:0 auto;padding:52px 24px;animation:fadeInUp .5s ease both;}
 .legal-pg h1{font-family:'Playfair Display',serif;font-size:38px;font-weight:900;margin-bottom:7px;}
 .legal-pg h1 span{color:var(--gold-400);}
@@ -823,7 +823,7 @@ async function handleGenerate(){
   songs.unshift(song);saveSongs();renderSongs();
   user.used++;saveUser();updateCredDisplay();
   try{
-    const k=window.SONAUTO_sksonauto_sUuNu6ds8prAOPsBuykY3JbTHO2Nq2kuhegtFdIdH6X89kBE||'';
+    const k = "sk-sonauto_sUuNu6ds8prAOPsBuykY3JbTHO2Nq2kuhegtFdIdH6X89kBE";
     if(k)await genSonauto(id,enriched,title,k);
     else await genDemo(id,title);
   }catch(e){await genDemo(id,title);}
